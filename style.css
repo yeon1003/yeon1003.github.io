@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  background: #f8f8f6;
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e4;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #82917d;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 72px 0;
+  border-bottom: 1px solid #e5e5e0;
+  scroll-margin-top: 20px;
+}
+
+.home {
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.small-title {
+  color: #82917d;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 8px 0 14px;
+  font-size: 42px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 28px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.home > p:last-child,
+.content p,
+.card p {
+  color: #666;
+}
+
+.content {
+  max-width: 680px;
+}
+
+.info {
+  margin-top: 28px;
+  padding: 18px 22px;
+  background: #fff;
+  list-style: none;
+}
+
+.info li + li {
+  margin-top: 8px;
+}
+
+.info strong {
+  display: inline-block;
+  width: 65px;
+  color: #555;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e8e8e4;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 28px 20px;
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  section {
+    padding: 54px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
